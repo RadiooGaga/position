@@ -18,6 +18,7 @@
   header {
     width: 100%;
     position: fixed;
+    z-index: 1;
     padding: 10px;
     top: 0;
     left: 0;
@@ -68,16 +69,18 @@
     background-color: darkkhaki;
     border:1px dashed #9ad79b;
     position: relative;
-    top: 240px;
+    top: 50px;
     text-align: center;
+    margin-top: 30vh;
     padding: 5px;
+    height: 400px;
     
   }
 
 
   footer {
     border:1px dashed #9ad79b;
-    position: absolute;
+    position: sticky;
     background-color: beige;
     bottom: 0;
     width: 100%;
@@ -85,5 +88,5 @@
   }
 
   footer > p {
-    padding: 10px;
+    padding: 20px;
   }
