@@ -3,6 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --font-family:var('OptimaLTP-Roman');
+  }
+
+  @font-face {
+    font-family: 'OptimaLTP-Roman';
+    src: url(./fonts/fonts/OptimaLTPro-Roman.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+
   }
   
   body {
@@ -12,7 +21,6 @@
     padding: 0;
     min-height: 100vh;
     background-color: #000000;
-    color: #9ad79b;
   }
 
   header {
@@ -22,71 +30,125 @@
     padding: 10px;
     top: 0;
     left: 0;
-    background-color: rgb(137, 156, 137);
-    border:1px dashed #9ad79b;
+    background-color: #f9f6ed;
+    border:1px solid gray;
   }
 
   main {
-    background-color: beige;
+    background-color: #c6c1bd;
     position: relative;
     top: 70px;
-    border:1px dashed #9ad79b;
+    border:1px solid gray;
   }
 
   .content {
     position: relative;
+    color: white;
+    background-color: #6b6368;
     font-size: 13px;
-    padding: 13px;
+    padding: 16px 8px;
   }
 
   h1 {
-    font-size: 35px;
+    font-size: 20px;
+    text-align: end;
+    position: fixed;
+    top: 25px;
+    right: 12px;
+    color: #6b6368;
+    font-family:'OptimaLTP-Roman';
   }
+
+  button {
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: 26px;
+    border-radius: 10px;
+    padding:  5px 10px 5px 10px;
+    color: white;
+    background-color: #6b6368;
+  }
+
+  ul {
+    padding-top: 20px;
+  }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
+
+li {
+  padding: 20px 0 20px 0;
+}
+
+li::marker {
+  content: none;
+}
 
   h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 18px;
+    font-family:'OptimaLTP-Roman';
+    font-weight: 100;
   }
 
   p, li {
     font-size: 15px;
+    color: white;
+    font-family:'OptimaLTP-Roman';
+  }
+
+  span {
+    color: whitesmoke;
+  }
+
+  aside {
+    width: 100%;
+    height: 540px;
+    background-color: #0d0d0e;
+  }
+
+  aside > img {
+    width: 100%;
+    height: 540px;
+    position: absolute;
+    object-fit: cover;
   }
 
   .sidebar {
     position: absolute;
-    background-color: cadetblue;
+    background-color: #6b6368;
     right: 10px;
-    margin-top: 8px;
-    border: 1px dashed #9ad79b;
-    padding: 12px 12px 12px 24px;
+    top: 280px;
+    border:1px solid gray;
+    padding: 12px 24px 26px 24px;
   }
 
 
   .features {
-    background-color: darkkhaki;
-    border:1px dashed #9ad79b;
+    background-color: #c6c1bd;
+    border:1px solid gray;
     position: relative;
-    top: 50px;
     text-align: center;
-    margin-top: 30vh;
-    padding: 5px;
-    height: 400px;
-    
+    height: 500px;
+    padding: 50px 20px 10px 20px;
+  }
+
+  .feature {
+    padding: 10px 0 10px 0;
   }
 
 
   footer {
-    border:1px dashed #9ad79b;
+    border:1px solid gray;
     position: sticky;
-    background-color: beige;
+    background-color: #f9f6ed;
     bottom: 0;
     width: 100%;
     text-align: center;
   }
 
   footer > p {
+    color: gray;
     padding: 20px;
   }
